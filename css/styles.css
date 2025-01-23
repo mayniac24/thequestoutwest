@@ -83,7 +83,8 @@ a:hover {
 .container {
     display: flex;
     justify-content: center; /* Centers horizontally */
-    align-items: center;    /* Centers vertically if needed */
+    align-items: center;     /* Centers vertically if needed */
+    min-height: 300px;       /* Example to give it some height */
 }
 
 img {
