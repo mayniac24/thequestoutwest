@@ -1,0 +1,137 @@
+@font-face {
+    font-family: 'BlackJack';
+    src: url('../fonts/BlackJack.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap; /* This will show fallback font until custom font loads */
+}
+
+
+/* Base styles */
+body {
+    background-color: #000000;
+    color: #B0BEC5;
+    font-family: 'BlackJack', cursive; /* You'll need to find and include this font or use a web font service */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    color: #FFA500;
+    font-weight: normal;
+}
+
+/* Header */
+header {
+    background-image: url('path-to-your-mountain-image.jpg'); /* Use an image of mountains or relevant artwork */
+    background-size: cover;
+    background-position: center;
+    padding: 2em 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Navigation */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #FFA500;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #B0BEC5;
+}
+
+/* Content Areas */
+main {
+    padding: 2em;
+}
+
+article {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    margin-bottom: 2em;
+    padding: 1em;
+}
+
+/* Links */
+a {
+    color: #FFA500;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Buttons */
+.button {
+    background-color: #FFA500;
+    border: none;
+    color: #000000;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #FF8C00;
+}
+
+/* Footer */
+footer {
+    background-color: #1a1a1a;
+    color: #B0BEC5;
+    text-align: center;
+    padding: 1em 0;
+}
+
+/* Podcast Player */
+.podcast-player {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.podcast-player audio {
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+    
+    header h1 {
+        font-size: 2em;
+    }
+    
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
